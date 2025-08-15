@@ -1,4 +1,4 @@
-Day1 Task-
+Day1 Task Summary-
 1)Generate the Project :
     *Go to Spring Initializr.
     *Create a new project named javafx-realtime-chat(or any other name).
@@ -30,8 +30,52 @@ If you already have authentication, you can extract the username from the sessio
 ----------------------
 so the username in messages to be secure and not fake-able, the correct flow is:
 Register Page – user creates an account in your Spring Boot backend (stored in DB).
-Login Page – user logs in and gets an authenticated session (Spring Security).
+Login Page – user login and gets an authenticated session (Spring Security).
 WebSocket Handshake – WebSocket connection is established after login, so principal.getName() in your ChatController will return the logged-in username automatically.
 Send Messages – since the username comes from principal, no one can fake it in the client.
 */
 -----------------------------------------------------------------------------------------------------------
+
+Day2 Task Summary- 
+1)Added two dependencies:
+    Spring Data JPA
+    MySQL Connector/J  (for database connectivity)
+  
+2)Added new Backend Java classes, & interfaces for user authentication system:
+    UserHandshakeHandler.java (WebSocket handshake customization to pass user data)
+    UserController.java (handles user registration/login)
+    User.java (entity for storing user info)
+    UserRepository.java (DB access layer)
+    UserService.java & UserServiceImpl.java (business logic for users)
+
+3)Added static HTML forms for frontend login/registration
+    register.html
+    login.html 
+
+4)Updated existing files:
+    WebSocketConfig to register UserHandshakeHandler for passing user details during WebSocket connection.
+    chat.html to work with the login system and show the logged-in user’s name.
+    
+-------------------------------------------------------------------------------------------------------------
+
+Day3 Task Summary-
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
