@@ -55,15 +55,33 @@ Day2 Task Summary-
 4)Updated existing files:
     WebSocketConfig to register UserHandshakeHandler for passing user details during WebSocket connection.
     chat.html to work with the login system and show the logged-in user’s name.
-    
+
+Darawback : No Username in Messages After Login    
 *************************************************************************************************************************
 
 Day3 Task Summary-
 
+Fix Username Display Issue.
 
-   
+Secure password using BCrypt password when saving or checking: 
+  Passwords are hashed using BCrypt when registering.
+  Login checks use BCrypt password matching.
 
+Enhance UI
+  Show sender’s name, time, and colored bubbles.
+  Highlight the logged-in user’s own messages.
 
+Add Message History
+   Save messages in a database (e.g., MySQL).
+   When a new user connects, load recent messages.
+
+Add Authentication to WebSocket
+  Only allow logged-in users to connect.
+  Use Spring Security or token-based auth for the WebSocket handshake.
+  
+Typing Indicators & Read Receipts
+  Show “User is typing…” in real-time.
+  Mark messages as read when viewed.
 
 
 
