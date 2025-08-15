@@ -34,8 +34,8 @@ Login Page – user login and gets an authenticated session (Spring Security).
 WebSocket Handshake – WebSocket connection is established after login, so principal.getName() in your ChatController will return the logged-in username automatically.
 Send Messages – since the username comes from principal, no one can fake it in the client.
 */
------------------------------------------------------------------------------------------------------------
 
+*************************************************************************************************************************
 Day2 Task Summary- 
 1)Added two dependencies:
     Spring Data JPA
@@ -56,7 +56,7 @@ Day2 Task Summary-
     WebSocketConfig to register UserHandshakeHandler for passing user details during WebSocket connection.
     chat.html to work with the login system and show the logged-in user’s name.
     
--------------------------------------------------------------------------------------------------------------
+*************************************************************************************************************************
 
 Day3 Task Summary-
 
